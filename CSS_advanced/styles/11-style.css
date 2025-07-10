@@ -25,9 +25,14 @@ a {
 }
 .section-tagline{
 	color: var(--color-primary);
+	font-family: var(--font-family-title);
 	text-align: center;
+	font-weight: var(--font-weight-bold);
+	text-transform: uppercase;
 }
-
+.section-tagline-transform{
+	text-transform: uppercase;
+}
 :root{
 	--color-primary: #d73953;
 	--color-black: #090909;
