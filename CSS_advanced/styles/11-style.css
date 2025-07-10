@@ -26,12 +26,8 @@ a {
 .section-tagline{
 	color: var(--color-primary);
 	font-family: var(--font-family-title);
-	text-align: center;
 	font-weight: var(--font-weight-bold);
 	text-transform: var(--section-tagline-transform);
-}
-.section-tagline-transform{
-	text-transform: uppercase;
 }
 
 :root{
