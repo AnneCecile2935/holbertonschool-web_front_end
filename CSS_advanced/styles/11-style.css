@@ -30,6 +30,9 @@ a {
 	font-weight: var(--font-weight-bold);
 	text-transform: var(--section-tagline-transform);
 }
+.section-tagline-transform{
+	text-transform: uppercase;
+}
 
 :root{
 	--color-primary: #d73953;
