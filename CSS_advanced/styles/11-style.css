@@ -29,6 +29,7 @@ a {
 	text-align: center;
 	font-weight: var(--font-weight-bold);
 	text-transform: var(--section-tagline-transform);
+}
 
 :root{
 	--color-primary: #d73953;
