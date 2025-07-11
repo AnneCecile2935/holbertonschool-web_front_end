@@ -131,7 +131,7 @@ a:active{
 	--nav-item-letter-spacing: 0.04rem; /*4% de 1rem*/
 	--nav-item-display: inline-block;
 	--nav-item-margin: 0 0 3rem 0; /*3rem en bas*/
-	--nav-item-link-hover: var(--color-primary);
+	--nav-item-link-hover: var(--color-white);
 	--section-tagline-margin: 0;
 	--button-display: inline-block;
 	--button-padding: 1.5rem 3rem;
@@ -189,7 +189,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   background-color: var(--color-white);
   width: 0;
-  height: 2rem;
+  height: 20%;
 }
 .nav .nav-item:hover .nav-link::before {
   background-color: var(--color-primary);
@@ -289,4 +289,49 @@ ul.row{
 	position: var(--header-logo-link-position);
 	top: var(--header-logo-link-top);
 	left: var(--header-logo-link-left);
+}
+.card-work .card-outer {
+	position: relative;
+	overflow: hidden;
+}
+.card-work .card-image img{
+	height: 30rem;
+	width: 100%;
+	object-fit : cover;
+	vertical-align: bottom;
+
+}
+.card-work .card-inner{
+	position: absolute;
+	top: -0.1rem;
+	left: -0.1rem;
+	right: -0.1rem;
+	z-index: 1;
+}
+.card-work:hover .card-inner{
+	background-color: rgba(0, 0, 0, 0.7);
+}
+.card-work .card-title {
+	text-align: center;
+	margin: 0;
+	opacity: 0;
+	height: 100%;
+	position: relative;
+}
+.card-work .card-title a {
+	display: block;
+	text-decoration: none;
+	padding-top: 45%;
+}
+.card-work .card-title a::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.card-work:hover .card-title {
+  opacity: 1;
 }
